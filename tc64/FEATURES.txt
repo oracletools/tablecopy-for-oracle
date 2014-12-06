@@ -1,0 +1,12 @@
+##
+##tc64.exe -h FEAT 
+##
+---------------------------------------------------------------------- 
+#FreeUkraine #SaveUkraine #StopRussia #PutinKhuilo #CrimeaIsUkraine
+----------------------------------------------------------------------
+TableCopy for Oracle (v1.23.9, beta, 2014/12/06 16:21:10) [64bit]
+Copyright (c): 2014 Alex Buzunov, All rigts reserved.
+Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
+----------------------------------------------------------------------
+	1. Copy table data from "Oracle" to "Oracle"
+	2. Copy table data from "Oracle" to "Oracle"
