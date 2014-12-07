@@ -4,7 +4,7 @@
 ---------------------------------------------------------------------- 
 #FreeUkraine #SaveUkraine #StopRussia #PutinKhuilo #CrimeaIsUkraine
 ----------------------------------------------------------------------
-TableCopy for Oracle (v1.23.9, beta, 2014/12/06 16:21:10) [64bit]
+TableCopy for Oracle (v1.23.9, beta, 2014/12/07 10:06:56) [64bit]
 Copyright (c): 2014 Alex Buzunov, All rigts reserved.
 Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
 ----------------------------------------------------------------------
@@ -67,7 +67,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -105,7 +105,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 3 ^
   -r 3 ^
@@ -142,7 +142,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -180,7 +180,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -217,7 +217,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -254,7 +254,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -292,7 +292,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -331,7 +331,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -369,7 +369,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 3 ^
   -r 3 ^
@@ -406,7 +406,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -443,7 +443,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -480,7 +480,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -519,7 +519,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -557,7 +557,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -593,7 +593,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 1 ^
   -r 1 ^
@@ -632,7 +632,7 @@ Arguments:
   -m[--nls_timestamp_format] is "nls_timestamp_format for target."
   -Z[--target_client_home] is "Path to Oracle client home bin dir."	
 Example: 
-  echo y|c:\Python27\tc_dist_64\20141206_162110\tc64\tc64.exe ^
+  echo y|c:\Python27\tc_dist_64\20141207_100656\tc64\tc64.exe ^
   -w ora2ora ^
   -o 3 ^
   -r 3 ^

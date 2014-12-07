@@ -17,7 +17,7 @@
 ::	-m[--nls_timestamp_format] is "nls_timestamp_format for target."
 ::	-Z[--target_client_home] is "Path to Oracle client home bin dir."	
 
-echo y|c:\Python27\tc_dist_32\20141206_162110\tc32\tc32.exe ^
+echo y|c:\Python27\tc_dist_32\20141207_100656\tc32\tc32.exe ^
 -w ora2ora ^
 -o 1 ^
 -r 1 ^
