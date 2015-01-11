@@ -1,0 +1,44 @@
+
+C:\Python27\data_migrator_1239>echo y  | C:\Python27\tc_dist_64\20150111_052504\tc64\tc64.exe -w ora2ora -o 1 -r 1 -t "|" -c SCOTT.Date_test_from -f SCOTT/tiger2@orcl -e "YYYY-MM-DD HH24.MI.SS" -m "YYYY-MM-DD HH24.MI.SS.FF2" -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" -z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN" -g SCOTT/tiger2@orcl -a SCOTT.Date_test_to -N part_15_sp1 -e "YYYY-MM-DD HH24.MI.SS" -m "YYYY-MM-DD HH24.MI.SS.FF2" -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" -Z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN" 
+----------------------------------------------------------------------
+TableCopy for Oracle (v1.23.9, beta, 2015/01/11 05:25:04) [64bit]
+Copyright (c): 2014 Alex Buzunov, All rigts reserved.
+Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
+----------------------------------------------------------------------
+ora2ora
+ORA
+####################
+Performing data copy.
+		
+From Oracle:	
+	from db: SCOTT@orcl
+	table: SCOTT.Date_test_from
+	shards:	1
+		
+		
+	To Oracle:	
+		to db: SCOTT@orcl
+		to table: SCOTT.Date_test_to
+		
+####################
+Are you sure you want to proceed?(y/n): 
+
+Thread-0 (0, 13545L, 43)
+############################################################
+Copy stats (1 threads, 1 shards):
+############################################################
+2015-01-11 05:28:28,732 - ora2ora - INFO - Starting Thread-0
+2015-01-11 05:28:28,733 - ora2ora - INFO - Thread-0 processing Shard-0
+2015-01-11 05:28:28,733 - ora2ora - INFO - Extracting data...
+2015-01-11 05:28:28,792 - ora2ora - INFO - Done
+2015-01-11 05:28:29,078 - ora2ora - INFO - Loading data...
+2015-01-11 05:28:29,880 - ora2ora - INFO - SQL*Loader status =0
+2015-01-11 05:28:29,881 - ora2ora - INFO - Done
+2015-01-11 05:28:29,881 - ora2ora - INFO - spool file deleted.
+2015-01-11 05:28:29,881 - ora2ora - INFO - Thread-0 exit status 0
+2015-01-11 05:28:29,881 - ora2ora - INFO - Exiting Thread-0
+2015-01-11 05:28:29,881 - ora2ora - INFO - Shard-0/0:          43 rows
+2015-01-11 05:28:29,881 - ora2ora - INFO - TOTAL Bytes:       13545 Bytes
+2015-01-11 05:28:29,881 - ora2ora - INFO - TOTAL Rows:           43 Rows
+2015-01-11 05:28:29,881 - ora2ora - INFO - Done.
+2015-01-11 05:28:29,881 - ora2ora - INFO - Elapsed: 00:00:01

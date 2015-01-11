@@ -1,0 +1,40 @@
+
+C:\Python27\data_migrator_1239>echo y  | C:\Python27\tc_dist_32\20150111_052504\tc32\tc32.exe -w ora2csv -o 1 -r 1 -t "|" -c SCOTT.Sub_Partitioned_test_from -S part_15_sp1 -f SCOTT/tiger2@orcl -e "YYYY/MM/DD" -m "YYYY-MM-DD-HH24.MI.SS.FF" -O "YYYY-MM-DD-HH24:MI:SS.FF" -z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN" -W 1 
+----------------------------------------------------------------------
+TableCopy for Oracle (v1.23.9, beta, 2015/01/11 05:25:04) [32bit]
+Copyright (c): 2014 Alex Buzunov, All rigts reserved.
+Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
+----------------------------------------------------------------------
+ora2csv
+CSV
+C:\tmp\dm_out\20150111_053652_274000\SCOTT.Sub_Partitioned_test_from_part_15_sp1.20150111_053652_274000.data
+####################
+Performing data extraction.
+		
+From Oracle:	
+	from db: SCOTT@orcl
+	table: SCOTT.Sub_Partitioned_test_from
+	sub-partition: part_15_sp1
+	shards:	1
+		
+		
+To CSV:
+	C:\tmp\dm_out\20150111_053652_274000\SCOTT.Sub_Partitioned_test_from_part_15_sp1.20150111_053652_274000.data
+
+####################
+Are you sure you want to proceed?(y/n): 
+Thread-0 (0, 2238L, 18)
+############################################################
+Copy stats (1 threads, 1 shards):
+############################################################
+2015-01-11 05:36:52,505 - ora2csv - INFO - Starting Thread-0
+2015-01-11 05:36:52,506 - ora2csv - INFO - Thread-0 processing Shard-0
+2015-01-11 05:36:52,506 - ora2csv - INFO - Extracting data...
+2015-01-11 05:36:52,578 - ora2csv - INFO - Done.
+2015-01-11 05:36:52,578 - ora2csv - INFO - Thread-0 exit status 0
+2015-01-11 05:36:52,578 - ora2csv - INFO - Exiting Thread-0
+2015-01-11 05:36:52,578 - ora2csv - INFO - Shard-0/0:          18 rows
+2015-01-11 05:36:52,579 - ora2csv - INFO - TOTAL Bytes:        2238 Bytes
+2015-01-11 05:36:52,579 - ora2csv - INFO - TOTAL Rows:           18 Rows
+2015-01-11 05:36:52,579 - ora2csv - INFO - Done.
+2015-01-11 05:36:52,579 - ora2csv - INFO - Elapsed: 00:00:00

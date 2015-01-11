@@ -36,36 +36,48 @@ datadir= os.path.join(logdir,ts)
 ##default export location if not provided as command line arg
 TIMESTAMPED_TO_DIR = True
 TIMESTAMPED_TO_FILE = True
-to_dir=r'C:\tmp\dm_out'
-if TIMESTAMPED_TO_DIR:
-	to_dir =os.path.join(to_dir,ts)
 
-if not os.path.isdir(to_dir):
-	os.makedirs(to_dir)
-
-to_file=None
-if TIMESTAMPED_TO_FILE:
-	to_file=os.path.join(to_dir,'spool_%s.data' % ts)
-	if hasattr(args, 'query_sql_file') and args.query_sql_file:
-		qfn, qfx = os.path.splitext(os.path.basename(args.query_sql_file))
-		to_file=os.path.join(to_dir,'%s_%s.data' % (qfn,ts))
-	elif hasattr(args, 'from_sub_partition') and args.from_sub_partition:
-		to_file=os.path.join(to_dir,'%s_%s.%s.data' % (args.from_table,args.from_sub_partition,ts ))
-	elif hasattr(args, 'from_partition') and args.from_partition:
-		to_file=os.path.join(to_dir,'%s_%s.%s.data' % (args.from_table,args.from_partition.replace('(','_').replace(')','_'),ts ))
-	elif hasattr(args, 'from_table') and args.from_table:
-		to_file=os.path.join(to_dir,'%s_%s.data' % (args.from_table,ts ))
+#print from_db, to_db
+#print args.to_file
+#print args.to_dir
+#e(0)
+to_dir=None
+if hasattr(args, 'to_dir') and args.to_dir:
+	to_dir=args.to_dir
 else:
-	to_file=os.path.join(to_dir,'spool.data')
-	if hasattr(args, 'query_sql_file')and  args.query_sql_file:
-		qfn, qfx = os.path.splitext(os.path.basename(args.query_sql_file))
-		to_file=os.path.join(to_dir,'%s.data' % (qfn ))
-	elif hasattr(args, 'from_sub_partition') and args.from_sub_partition:
-		to_file=os.path.join(to_dir,'%s.%s.data' % (args.from_table,args.from_sub_partition ))
-	elif hasattr(args, 'from_partition') and args.from_partition:
-		to_file=os.path.join(to_dir,'%s.%s.data' % (args.from_table,args.from_partition))
-	elif hasattr(args, 'from_table') and args.from_table:
-		to_file=os.path.join(to_dir,'%s.data' % (args.from_table ))
+	#default dir
+	to_dir=r'C:\tmp\dm_out'
+	if TIMESTAMPED_TO_DIR:
+		to_dir =os.path.join(to_dir,ts)
+	if not os.path.isdir(to_dir):
+		os.makedirs(to_dir)	
+to_file=None
+if hasattr(args, 'to_file') and args.to_file:
+	to_file=args.to_file
+else:
+	if TIMESTAMPED_TO_FILE:
+		to_file=os.path.join(to_dir,'spool_%s.data' % ts)
+		if hasattr(args, 'query_sql_file') and args.query_sql_file:
+			qfn, qfx = os.path.splitext(os.path.basename(args.query_sql_file))
+			to_file=os.path.join(to_dir,'%s_%s.data' % (qfn,ts))
+		elif hasattr(args, 'from_sub_partition') and args.from_sub_partition:
+			to_file=os.path.join(to_dir,'%s_%s.%s.data' % (args.from_table,args.from_sub_partition,ts ))
+		elif hasattr(args, 'from_partition') and args.from_partition:
+			to_file=os.path.join(to_dir,'%s_%s.%s.data' % (args.from_table,args.from_partition.replace('(','_').replace(')','_'),ts ))
+		elif hasattr(args, 'from_table') and args.from_table:
+			to_file=os.path.join(to_dir,'%s_%s.data' % (args.from_table,ts ))
+	else:
+		to_file=os.path.join(to_dir,'spool.data')
+		if hasattr(args, 'query_sql_file')and  args.query_sql_file:
+			qfn, qfx = os.path.splitext(os.path.basename(args.query_sql_file))
+			to_file=os.path.join(to_dir,'%s.data' % (qfn ))
+		elif hasattr(args, 'from_sub_partition') and args.from_sub_partition:
+			to_file=os.path.join(to_dir,'%s.%s.data' % (args.from_table,args.from_sub_partition ))
+		elif hasattr(args, 'from_partition') and args.from_partition:
+			to_file=os.path.join(to_dir,'%s.%s.data' % (args.from_table,args.from_partition))
+		elif hasattr(args, 'from_table') and args.from_table:
+			to_file=os.path.join(to_dir,'%s.data' % (args.from_table ))
+
 def get_sharded_outfn(shard):
 	#print self.uargs.to_file
 	#print self.uargs.to_dir

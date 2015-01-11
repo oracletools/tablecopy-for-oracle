@@ -1,16 +1,25 @@
 ##
 ##tc64.exe -h 
 ##
----------------------------------------------------------------------- 
-#FreeUkraine #SaveUkraine #StopRussia #PutinKhuilo #CrimeaIsUkraine
 ----------------------------------------------------------------------
-TableCopy for Oracle (v1.23.9, beta, 2014/12/07 10:06:56) [64bit]
+TableCopy for Oracle (v1.23.9, beta, 2015/01/11 05:25:04) [64bit]
 Copyright (c): 2014 Alex Buzunov, All rigts reserved.
 Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
 ----------------------------------------------------------------------
+Databases suported (1):
+1. Oracle
+
+Data formats suported (1):
+1. CSV
+
 For detailed help use one of the options:
 
 From Oracle:
 
 	To Oracle              : tc64.exe -h ora2ora
+	To CSV                 : tc64.exe -h ora2csv
+
+To Oracle:
+
+	From CSV               : tc64.exe -h csv2ora
 

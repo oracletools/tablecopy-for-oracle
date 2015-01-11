@@ -17,7 +17,16 @@ def get_load_config(db_loader_loc,shard_name, row_from, row_to,ctlfn,outfn, data
 	loader_errors=10
 	ptn=''
 	sptn=''
-	loadConf=[db_loader_loc, 'control=%s' % ctlfn, 'userid=%s' % args.to_db,
+	userid = args.to_db
+	#check if url connect
+	c,sid = args.to_db.split('@')
+	if sid.strip().startswith("'(DESCRIPTION"):
+		u,p=c.split('/')
+		userid='%s@\"%s\"/%s' % (u,sid.strip("'").replace('(',r'\(').replace(')',r'\)'),p)
+	
+	loadConf=[db_loader_loc, 
+	'control=%s' % ctlfn, 
+	'userid=%s' % userid, #args.to_db,
 	'DATA=%s' % outfn,
 	'COLUMNARRAYROWS=%s' % dpl_columnarrayrows,
 	'STREAMSIZE=%s' % dpl_streamsize,'READSIZE=%s' % dpl_readsize,
