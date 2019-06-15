@@ -21886,3 +21886,8 @@ Example:
   -m "YYYY-MM-DD HH24.MI.SS.FF2" ^
   -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" ^
   -Z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN"
+  
+  
+## Snowpipe
+
+https://github.com/pydemo/Snowpipe-For-SQLServer
