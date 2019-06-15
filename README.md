@@ -1,11 +1,14 @@
 ##
 ##tc32.exe -h ALL 
-
+```
 ----------------------------------------------------------------------
 TableCopy for Oracle (v1.23.9, beta, 2015/01/11 05:25:04) [32bit]
 Copyright (c): 2014 Alex Buzunov, All rigts reserved.
 Agreement: Use this tool at your own risk. Author is not liable for any damages or losses related to the use of this software.
 ----------------------------------------------------------------------
+```
+
+```
 From Oracle:
 
 Set following command line arguments to copy from Oracle to Oracle:
@@ -21886,7 +21889,7 @@ Example:
   -m "YYYY-MM-DD HH24.MI.SS.FF2" ^
   -O "YYYY-MM-DD HH:MI:SS.FF2 TZH:TZM" ^
   -Z "C:\app\alex_buz\product\11.2.0\dbhome_2\BIN"
-  
+  ```
   
 ## Snowpipe
 
